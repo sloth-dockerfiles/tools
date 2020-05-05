@@ -7,7 +7,7 @@ RUN  cd /tmp/ && \
      curl -sSL -o curl-7.64.0.tar.gz https://curl.haxx.se/download/curl-7.64.0.tar.gz && \
      tar -zxvf curl-7.64.0.tar.gz && \
      cd curl-7.64.0 && \
-     ./configure --with-ssl=/usr/bin && \
+     ./configure && \
      make && \
      make install && \
      yum groupremove "Development Tools" -y && \
