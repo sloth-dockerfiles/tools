@@ -1,5 +1,7 @@
 from centos:7
 
+RUN yum -y install wget
+
 # Install OpenSSL as the crypto module (and for Curl)
 ENV OPENSSL_INSTALL "$HOME/openssl-1.0.2r_install"
 RUN wget https://www.openssl.org/source/openssl-1.0.2r.tar.gz && tar -xf openssl-1.0.2r.tar.gz
